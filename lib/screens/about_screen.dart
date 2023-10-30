@@ -13,8 +13,6 @@ class AboutScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // context.go('/setting');
-            // Navigator.pop(context);
             context.pop();
           },
           child: const Text(

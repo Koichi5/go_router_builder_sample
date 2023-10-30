@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:go_router_builder_sample/router_builder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            context.go('/detail/Koichi5/101');
+            const DetailRoute(userName: 'Koichi5', userAge: 20, $extra: 101).go(context);
           },
           child: const Text(
             "Go To Detail Screen",
